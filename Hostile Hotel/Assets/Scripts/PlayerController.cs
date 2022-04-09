@@ -7,27 +7,32 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] float speed;
 
+    bool hasCandle;
+
     void Update()
     {
-        /*
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            player.GetComponent<Rigidbody2D>().velocity = new Vector2(-1 * speed, 0);
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            player.GetComponent<Rigidbody2D>().velocity = new Vector2(1 * speed, 0);
-        }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -1 * speed);
-        }
-        else if (Input.GetKeyDown(KeyCode.W))
-        {
-            player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 1 * speed);
-        }
-        */
-
         player.GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
+        if (Input.GetKeyDown(KeyCode.E)) Debug.Log("E");
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Altar")
+        {
+            if (hasCandle && Input.GetKeyDown(KeyCode.E))
+            {
+                other.gameObject.GetComponent<Altar>().HasCandle = true;
+                hasCandle = false;
+            }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Candle")
+        {
+            Destroy(other.gameObject);
+            hasCandle = true;
+        }
     }
 }
