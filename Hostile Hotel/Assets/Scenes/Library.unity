@@ -249,6 +249,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Horizontal BookShelf (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
+      objectReference: {fileID: 0}
     - target: {fileID: 7368790432253981326, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -491,6 +503,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
+      objectReference: {fileID: 0}
     - target: {fileID: 7278096690883488995, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
       propertyPath: m_Name
       value: Vertical Book Wall (9)
@@ -512,6 +536,18 @@ PrefabInstance:
     - target: {fileID: 7368790432253981324, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_Name
       value: Horizontal BookShelf (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
       objectReference: {fileID: 0}
     - target: {fileID: 7368790432253981326, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_RootOrder
@@ -615,6 +651,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
+      objectReference: {fileID: 0}
     - target: {fileID: 7278096690883488995, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
       propertyPath: m_Name
       value: Vertical Book Wall (13)
@@ -636,6 +684,18 @@ PrefabInstance:
     - target: {fileID: 7368790432253981324, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_Name
       value: Horizontal BookShelf (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
       objectReference: {fileID: 0}
     - target: {fileID: 7368790432253981326, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_RootOrder
@@ -698,6 +758,18 @@ PrefabInstance:
     - target: {fileID: 7368790432253981324, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_Name
       value: Horizontal BookShelf (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
       objectReference: {fileID: 0}
     - target: {fileID: 7368790432253981326, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_RootOrder
@@ -937,8 +1009,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1525909151
+  m_SortingLayer: 2
   m_SortingOrder: 100
   m_Sprite: {fileID: 21300000, guid: 21e5b148f89864444b5433f3350513ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1016,6 +1088,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
+      objectReference: {fileID: 0}
     - target: {fileID: 7278096690883488995, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
       propertyPath: m_Name
       value: Vertical Book Wall (14)
@@ -1082,8 +1166,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1462554163
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6eb6979782572c747a8bab889d4be3e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1300,6 +1384,18 @@ PrefabInstance:
     - target: {fileID: 7278096690883488992, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
       objectReference: {fileID: 0}
     - target: {fileID: 7278096690883488995, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
       propertyPath: m_Name
@@ -1532,6 +1628,18 @@ PrefabInstance:
     - target: {fileID: 7368790432253981324, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_Name
       value: Horizontal BookShelf (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
       objectReference: {fileID: 0}
     - target: {fileID: 7368790432253981326, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_RootOrder
@@ -1845,6 +1953,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
+      objectReference: {fileID: 0}
     - target: {fileID: 7278096690883488995, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
       propertyPath: m_Name
       value: Vertical Book Wall (12)
@@ -1906,6 +2026,18 @@ PrefabInstance:
     - target: {fileID: 7278096690883488992, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
       objectReference: {fileID: 0}
     - target: {fileID: 7278096690883488995, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
       propertyPath: m_Name
@@ -1970,8 +2102,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5089446363072371921, guid: efbc5acb5845029439d95383ab1aaeaf, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5089446363072371921, guid: efbc5acb5845029439d95383ab1aaeaf, type: 3}
       propertyPath: m_SortingOrder
-      value: 200
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5089446363072371921, guid: efbc5acb5845029439d95383ab1aaeaf, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
       objectReference: {fileID: 0}
     - target: {fileID: 5089446363072371922, guid: efbc5acb5845029439d95383ab1aaeaf, type: 3}
       propertyPath: m_Name
@@ -2034,6 +2174,18 @@ PrefabInstance:
     - target: {fileID: 7278096690883488992, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
       objectReference: {fileID: 0}
     - target: {fileID: 7278096690883488995, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
       propertyPath: m_Name
@@ -2126,6 +2278,18 @@ PrefabInstance:
     - target: {fileID: 7368790432253981324, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_Name
       value: Horizontal BookShelf (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
       objectReference: {fileID: 0}
     - target: {fileID: 7368790432253981326, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_RootOrder
@@ -2373,6 +2537,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Horizontal BookShelf (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
+      objectReference: {fileID: 0}
     - target: {fileID: 7368790432253981326, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2549,8 +2725,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1525909151
+  m_SortingLayer: 2
   m_SortingOrder: 100
   m_Sprite: {fileID: 21300000, guid: 21e5b148f89864444b5433f3350513ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2764,6 +2940,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278096690883488993, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
+      objectReference: {fileID: 0}
     - target: {fileID: 7278096690883488995, guid: a257cf61b36ca334e93a9b8aa80a5c9b, type: 3}
       propertyPath: m_Name
       value: Vertical Book Wall
@@ -2780,6 +2968,18 @@ PrefabInstance:
     - target: {fileID: 7368790432253981324, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_Name
       value: Horizontal BookShelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368790432253981325, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1525909151
       objectReference: {fileID: 0}
     - target: {fileID: 7368790432253981326, guid: 997f1aad63e7a9841b8bfd646d424a2d, type: 3}
       propertyPath: m_RootOrder

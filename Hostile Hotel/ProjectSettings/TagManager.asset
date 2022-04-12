@@ -43,3 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Map
+    uniqueID: 1462554163
+    locked: 0
+  - name: Furniture & Characters
+    uniqueID: 2769058145
+    locked: 0
+  - name: Characters
+    uniqueID: 2866864221
+    locked: 0
