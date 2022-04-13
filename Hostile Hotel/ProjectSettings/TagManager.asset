@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Altar
   - Candle
+  - Exit
+  - Interactable
   layers:
   - Default
   - TransparentFX

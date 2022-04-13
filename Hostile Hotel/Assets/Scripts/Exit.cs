@@ -5,13 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Exit : MonoBehaviour
 {
-    [SerializeField] string roomName;
+    [SerializeField] RoomName roomName;
 
-    void OnCollisionEnter2D(Collision2D other)
+    public void Use()
     {
-        if (other.gameObject.tag == "Player")
-        {
-            SceneManager.LoadScene(roomName);
-        }
+        GameManager.Instance.StartCoroutine("LoadRoom", roomName);
     }
 }

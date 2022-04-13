@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1173673175507384393, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
       propertyPath: m_Name
-      value: Exit
+      value: Exit to Altar Room
       objectReference: {fileID: 0}
     - target: {fileID: 1173673175507384394, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
       propertyPath: roomName
@@ -189,6 +189,14 @@ PrefabInstance:
     - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7474257986635982628, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0007352
+      objectReference: {fileID: 0}
+    - target: {fileID: 7474257986635982628, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0016292334
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
