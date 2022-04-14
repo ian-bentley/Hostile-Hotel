@@ -4,21 +4,30 @@ using UnityEngine;
 
 public class PlayerData
 {
-    Vector3 _position;
+    List<ItemType> _inventory;
+    int _heldItemSlotNum;
 
-    public Vector3 Position
+    public List<ItemType> Inventory
     {
-        get => _position;
-        set => _position = value;
+        get => _inventory;
+        set => _inventory = value;
     }
 
-    public PlayerData(Vector3 position)
+    public int HeldItemSlotNum
     {
-        _position = position;
+        get => _heldItemSlotNum;
+        set => _heldItemSlotNum = value;
     }
 
-    public PlayerData()
+    public PlayerData(List<ItemType> inventory, int heldItemSlotNum)
     {
-        _position = new Vector3(0, 0, 0);
+        Inventory = new List<ItemType>();
+
+        foreach(ItemType it in inventory)
+        {
+            Inventory.Add(it);
+        }
+        
+        HeldItemSlotNum = heldItemSlotNum;
     }
 }

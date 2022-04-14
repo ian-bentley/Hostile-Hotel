@@ -7,33 +7,51 @@ public enum ItemType { Null, Candle, Key, Lure }
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] GameObject player;
-    [SerializeField] float speed;
     [SerializeField] Animator animator;
+    [SerializeField] List<ItemType> _inventory;
+    [SerializeField] float _speed;
 
-    bool hasCandle;
-    [SerializeField] List<ItemType> inventory;
     ItemType _heldItem;
-    int heldItemSoltPosition;
+    int _heldItemSoltNum;
 
+    //Controls
     KeyCode interactKey = KeyCode.F;
     KeyCode inventoryScrollLeftKey = KeyCode.Q;
     KeyCode inventoryScrollRightKey = KeyCode.E;
 
     public ItemType HeldItem
     {
-        get => inventory[heldItemSoltPosition];
+        get => Inventory[HeldItemSoltNum];
+    }
+
+    public List<ItemType> Inventory
+    {
+        get => _inventory;
+        set => _inventory = value;
+    }
+
+    public int HeldItemSoltNum
+    {
+        get => _heldItemSoltNum;
+        set => _heldItemSoltNum = value;
+    }
+
+    public float Speed
+    {
+        get => _speed;
+        set => _speed = value;
     }
 
     void Awake()
     {
-        inventory = new List<ItemType>();
-        inventory.Add(ItemType.Null);
-        heldItemSoltPosition = 0;
+        Inventory = new List<ItemType>();
+        Inventory.Add(ItemType.Null);
+        HeldItemSoltNum = 0;
     }
 
     void Update()
     {
-        player.GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
+        player.GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxisRaw("Horizontal") * Speed, Input.GetAxisRaw("Vertical") * Speed);
         
         if (player.GetComponent<Rigidbody2D>().velocity.magnitude > 0) // player is moving
         {
@@ -56,25 +74,25 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(inventoryScrollRightKey))
         {
-            if (heldItemSoltPosition == inventory.Count - 1) //if held item position is last position in inventory list
+            if (HeldItemSoltNum == Inventory.Count - 1) //if held item position is last position in inventory list
             {
-                heldItemSoltPosition = 0; // held item position becomes first position
+                HeldItemSoltNum = 0; // held item position becomes first position
             }
             else
             {
-                heldItemSoltPosition++;
+                HeldItemSoltNum++;
             }
         }
 
         if (Input.GetKeyDown(inventoryScrollLeftKey))
         {
-            if (heldItemSoltPosition == 0) // if held item position is first position
+            if (HeldItemSoltNum == 0) // if held item position is first position
             {
-                heldItemSoltPosition = inventory.Count - 1; // held item position becomes last position
+                HeldItemSoltNum = Inventory.Count - 1; // held item position becomes last position
             }
             else
             {
-                heldItemSoltPosition--;
+                HeldItemSoltNum--;
             }
         }
     }
@@ -112,7 +130,7 @@ public class PlayerController : MonoBehaviour
                         {
                             Debug.Log("Retrieved item: " + other.gameObject.GetComponent<InteractableObject>().StoredItemType);
                             //Player plays dialogue retrieved from the interact grabbed item variable
-                            inventory.Add(other.gameObject.GetComponent<InteractableObject>().StoredItemType);
+                            Inventory.Add(other.gameObject.GetComponent<InteractableObject>().StoredItemType);
                             other.gameObject.GetComponent<InteractableObject>().StoredItemType = ItemType.Null;
                         }
                         else
@@ -133,12 +151,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    public void Load(PlayerData playerData)
     {
-        if (other.gameObject.tag == "Candle")
+        Inventory = new List<ItemType>();
+
+        foreach (ItemType it in playerData.Inventory)
         {
-            Destroy(other.gameObject);
-            hasCandle = true;
+            Inventory.Add(it);
         }
+
+        HeldItemSoltNum = playerData.HeldItemSlotNum;
     }
 }

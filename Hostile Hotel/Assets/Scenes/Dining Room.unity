@@ -335,6 +335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 434991981}
   - component: {fileID: 434991982}
+  - component: {fileID: 434991983}
   m_Layer: 0
   m_Name: Dining Room
   m_TagString: Untagged
@@ -462,6 +463,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &434991983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434991980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1180a78c319b3c342a0c991a9c6acdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableObjectsList: []
 --- !u!1 &509025389
 GameObject:
   m_ObjectHideFlags: 0

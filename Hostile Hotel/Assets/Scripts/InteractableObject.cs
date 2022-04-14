@@ -48,17 +48,10 @@ public class InteractableObject : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = UnlockedSprite;
     }
 
-    public GameObject GetData()
+    public void Load(InteractableObjectData interactableObjectData)
     {
-        return this.gameObject;
-    }
-
-    public void LoadData(InteractableObject interactableObject, Sprite spriteData)
-    {
-        StoredItemType = interactableObject.StoredItemType;
-        KeyItemType = interactableObject.KeyItemType;
-        UnlockedSprite = interactableObject.UnlockedSprite;
-        Locked = interactableObject.Locked;
-        GetComponent<SpriteRenderer>().sprite = spriteData;
+        StoredItemType = interactableObjectData.StoredItemType;
+        Locked = interactableObjectData.Locked;
+        GetComponent<SpriteRenderer>().sprite = interactableObjectData.Sprite;
     }
 }

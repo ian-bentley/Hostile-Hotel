@@ -1558,6 +1558,7 @@ GameObject:
   - component: {fileID: 2144075168}
   - component: {fileID: 2144075169}
   - component: {fileID: 2144075170}
+  - component: {fileID: 2144075171}
   m_Layer: 0
   m_Name: Altar Room
   m_TagString: Untagged
@@ -1706,6 +1707,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df7596f378de5d46b770e4fbfb57cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2144075171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144075166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1180a78c319b3c342a0c991a9c6acdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableObjectsList: []
 --- !u!1001 &1173673174277809633
 PrefabInstance:
   m_ObjectHideFlags: 0

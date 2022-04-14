@@ -853,6 +853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 567431324}
   - component: {fileID: 567431325}
+  - component: {fileID: 567431326}
   m_Layer: 0
   m_Name: Library
   m_TagString: Untagged
@@ -875,7 +876,6 @@ Transform:
   - {fileID: 61344629}
   - {fileID: 574086323}
   - {fileID: 2038809782}
-  - {fileID: 1897401782}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -975,6 +975,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &567431326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567431323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1180a78c319b3c342a0c991a9c6acdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableObjectsList: []
 --- !u!1 &574086321
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,7 +2630,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897401781}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.520147, y: 3.6925087, z: -0.58960724}
+  m_LocalPosition: {x: 10.855042, y: 3.657391, z: -37.913864}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1019263840}
@@ -2637,8 +2650,8 @@ Transform:
   - {fileID: 15548839}
   - {fileID: 2140283205}
   - {fileID: 652970511}
-  m_Father: {fileID: 567431324}
-  m_RootOrder: 4
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1944195011
 PrefabInstance:

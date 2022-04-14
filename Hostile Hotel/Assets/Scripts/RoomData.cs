@@ -12,14 +12,13 @@ public class RoomData
         set => _interactableObjectDataList = value;
     }
 
-    public RoomData(List<GameObject> interactableObjectsList)
+    public RoomData(List<InteractableObject> interactableObjectsList)
     {
-        InteractableObjectDataList = new List<InteractableObjectData>();
-        for (int i = 0; i < interactableObjectsList.Count; i++)
+        _interactableObjectDataList = new List<InteractableObjectData>();
+
+        foreach (InteractableObject io in interactableObjectsList)
         {
-            InteractableObjectData interactableObjectData;
-            interactableObjectData = new InteractableObjectData(interactableObjectsList[i].GetComponent<InteractableObject>().GetData());
-            InteractableObjectDataList.Add(interactableObjectData);
+            InteractableObjectDataList.Add(new InteractableObjectData(io));
         }
     }
 }

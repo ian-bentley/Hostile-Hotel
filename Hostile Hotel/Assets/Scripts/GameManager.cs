@@ -25,12 +25,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    PlayerData playerDataAltarRoom;
-    PlayerData playerDataBedroom;
-    PlayerData playerDataCrawlSpace;
-    PlayerData playerDataDiningRoom;
-    PlayerData playerDataHallway;
-    PlayerData playerDataLibrary;
+    PlayerData playerData;
 
     RoomData roomDataAltarRoom;
     RoomData roomDataBedroom;
@@ -41,43 +36,44 @@ public class GameManager : MonoBehaviour
 
     RoomName currentRoomName = RoomName.Bedroom;
 
-    public void LoadPlayer(PlayerData playerData)
-    {
-        GameObject player = GameObject.Find("Player");
-        player.transform.position = playerData.Position;
-    }
-
     public IEnumerator LoadRoom(RoomName roomName)
     {
-        GameObject player = GameObject.Find("Player");
-        Room room = FindObjectOfType<Room>();
+        PlayerController player = FindObjectOfType<PlayerController>();
+        Room currentRoom = FindObjectOfType<Room>();
 
+        // Save player data
+        playerData = new PlayerData(player.Inventory, player.HeldItemSoltNum);
+
+        //Save room data of current room
         switch (currentRoomName)
         {
             case RoomName.AltarRoom:
-                playerDataAltarRoom = new PlayerData(player.transform.position);
+                if (currentRoom.InteractableObjectsList != null)
+                    roomDataAltarRoom = new RoomData(currentRoom.InteractableObjectsList);
                 break;
             case RoomName.Bedroom:
-                playerDataBedroom = new PlayerData(player.transform.position);
-                //roomDataBedroom = room.SaveRoomData();
-                roomDataBedroom = new RoomData(room.GetRoomData();
+                if (currentRoom.InteractableObjectsList != null)
+                    roomDataBedroom = new RoomData(currentRoom.InteractableObjectsList);
                 break;
             case RoomName.CrawlSpace:
-                playerDataCrawlSpace = new PlayerData(player.transform.position);
+                if (currentRoom.InteractableObjectsList != null)
+                    roomDataCrawlSpace = new RoomData(currentRoom.InteractableObjectsList);
                 break;
             case RoomName.DiningRoom:
-                playerDataDiningRoom = new PlayerData(player.transform.position);
+                if (currentRoom.InteractableObjectsList != null)
+                    roomDataDiningRoom = new RoomData(currentRoom.InteractableObjectsList);
                 break;
             case RoomName.Hallway:
-                playerDataHallway = new PlayerData(player.transform.position);
+                if (currentRoom.InteractableObjectsList != null)
+                    roomDataHallway = new RoomData(currentRoom.InteractableObjectsList);
                 break;
             case RoomName.Library:
-                playerDataLibrary = new PlayerData(player.transform.position);
+                if (currentRoom.InteractableObjectsList != null)
+                    roomDataLibrary = new RoomData(currentRoom.InteractableObjectsList);
                 break;
         }
 
-        Debug.Log("Saved data for " + currentRoomName + ": " + player.transform.position);
-
+        // Load new room
         switch (roomName)
         {
             case RoomName.AltarRoom:
@@ -87,15 +83,16 @@ public class GameManager : MonoBehaviour
                     yield return null;
                 }
 
-                player = GameObject.Find("Player");
-                //room = FindObjectOfType<Room>();
+                if (roomDataAltarRoom != null)
+                {
+                    currentRoom = FindObjectOfType<Room>();
+                    currentRoom.Load(roomDataAltarRoom);
+                }
 
-                //room.LoadRoomData(roomDataAltarRoom);
+                //Load player data
+                player = FindObjectOfType<PlayerController>();
+                player.Load(playerData);
 
-                if (playerDataAltarRoom == null)
-                    playerDataAltarRoom = new PlayerData(player.transform.position);
-                LoadPlayer(playerDataAltarRoom);
-                Debug.Log("Loaded data for " + roomName + ": " + playerDataAltarRoom.Position);
                 break;
             case RoomName.Bedroom:
                 SceneManager.LoadScene("Bedroom");
@@ -103,16 +100,17 @@ public class GameManager : MonoBehaviour
                 {
                     yield return null;
                 }
-                player = GameObject.Find("Player");
-                room = FindObjectOfType<Room>();
 
                 if (roomDataBedroom != null)
-                    room.LoadRoomData(roomDataBedroom);
+                {
+                    currentRoom = FindObjectOfType<Room>();
+                    currentRoom.Load(roomDataBedroom);
+                }
 
-                if (playerDataBedroom == null)
-                    playerDataBedroom = new PlayerData(player.transform.position);
-                LoadPlayer(playerDataBedroom);
-                Debug.Log("Loaded data for " + roomName + ": " + playerDataBedroom.Position);
+                //Load player data
+                player = FindObjectOfType<PlayerController>();
+                player.Load(playerData);
+
                 break;
             case RoomName.CrawlSpace:
                 SceneManager.LoadScene("Crawl Space");
@@ -120,11 +118,17 @@ public class GameManager : MonoBehaviour
                 {
                     yield return null;
                 }
-                player = GameObject.Find("Player");
-                if (playerDataCrawlSpace == null)
-                    playerDataCrawlSpace = new PlayerData(player.transform.position);
-                LoadPlayer(playerDataCrawlSpace);
-                Debug.Log("Loaded data for " + roomName + ": " + playerDataCrawlSpace.Position);
+
+                if (roomDataCrawlSpace != null)
+                {
+                    currentRoom = FindObjectOfType<Room>();
+                    currentRoom.Load(roomDataCrawlSpace);
+                }
+
+                //Load player data
+                player = FindObjectOfType<PlayerController>();
+                player.Load(playerData);
+
                 break;
             case RoomName.DiningRoom:
                 SceneManager.LoadScene("Dining Room");
@@ -132,11 +136,17 @@ public class GameManager : MonoBehaviour
                 {
                     yield return null;
                 }
-                player = GameObject.Find("Player");
-                if (playerDataDiningRoom == null)
-                    playerDataDiningRoom = new PlayerData(player.transform.position);
-                LoadPlayer(playerDataDiningRoom);
-                Debug.Log("Loaded data for " + roomName + ": " + playerDataDiningRoom.Position);
+
+                if (roomDataDiningRoom != null)
+                {
+                    currentRoom = FindObjectOfType<Room>();
+                    currentRoom.Load(roomDataDiningRoom);
+                }
+
+                //Load player data
+                player = FindObjectOfType<PlayerController>();
+                player.Load(playerData);
+
                 break;
             case RoomName.Hallway:
                 SceneManager.LoadScene("Hallway");
@@ -144,12 +154,17 @@ public class GameManager : MonoBehaviour
                 {
                     yield return null;
                 }
-                player = GameObject.Find("Player");
 
-                if (playerDataHallway == null)
-                    playerDataHallway = new PlayerData(player.transform.position);
-                LoadPlayer(playerDataHallway);
-                Debug.Log("Loaded data for " + roomName + ": " + playerDataHallway.Position);
+                if (roomDataHallway != null)
+                {
+                    currentRoom = FindObjectOfType<Room>();
+                    currentRoom.Load(roomDataHallway);
+                }
+
+                //Load player data
+                player = FindObjectOfType<PlayerController>();
+                player.Load(playerData);
+
                 break;
             case RoomName.Library:
                 SceneManager.LoadScene("Library");
@@ -157,11 +172,17 @@ public class GameManager : MonoBehaviour
                 {
                     yield return null;
                 }
-                player = GameObject.Find("Player");
-                if (playerDataLibrary == null)
-                    playerDataLibrary = new PlayerData(player.transform.position);
-                LoadPlayer(playerDataLibrary);
-                Debug.Log("Loaded data for " + roomName + ": " + playerDataLibrary.Position);
+
+                if (roomDataLibrary != null)
+                {
+                    currentRoom = FindObjectOfType<Room>();
+                    currentRoom.Load(roomDataLibrary);
+                }
+
+                //Load player data
+                player = FindObjectOfType<PlayerController>();
+                player.Load(playerData);
+
                 break;
         }
 

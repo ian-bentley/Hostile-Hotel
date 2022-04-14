@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactableObjectsList:
-  - {fileID: 474006118}
+  - {fileID: 474006122}
 --- !u!1001 &1713067421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1271,6 +1271,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5089446363072371917, guid: efbc5acb5845029439d95383ab1aaeaf, type: 3}
+      propertyPath: _speed
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 5089446363072371918, guid: efbc5acb5845029439d95383ab1aaeaf, type: 3}
       propertyPath: m_SleepingMode
       value: 0
