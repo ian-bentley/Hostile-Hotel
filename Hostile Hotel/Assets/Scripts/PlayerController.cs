@@ -46,6 +46,9 @@ public class PlayerController : MonoBehaviour
     {
         Inventory = new List<ItemType>();
         Inventory.Add(ItemType.Null);
+        Inventory.Add(ItemType.Key); //temp
+        Inventory.Add(ItemType.Candle); //temp
+        Inventory.Add(ItemType.Lure); //temp
         HeldItemSoltNum = 0;
     }
 
@@ -82,6 +85,7 @@ public class PlayerController : MonoBehaviour
             {
                 HeldItemSoltNum++;
             }
+            UpdateHand();
         }
 
         if (Input.GetKeyDown(inventoryScrollLeftKey))
@@ -94,6 +98,7 @@ public class PlayerController : MonoBehaviour
             {
                 HeldItemSoltNum--;
             }
+            UpdateHand();
         }
     }
 
@@ -161,5 +166,38 @@ public class PlayerController : MonoBehaviour
         }
 
         HeldItemSoltNum = playerData.HeldItemSlotNum;
+        UpdateHand();
+    }
+
+    void UpdateHand()
+    {
+        switch(HeldItem)
+        {
+
+            case ItemType.Candle:
+                animator.SetBool("Has Candle", true);
+                animator.SetBool("Has Key", false);
+                animator.SetBool("Has Lure", false);
+                animator.SetBool("Has Null", false);
+                break;
+            case ItemType.Key:
+                animator.SetBool("Has Candle", false);
+                animator.SetBool("Has Key", true);
+                animator.SetBool("Has Lure", false);
+                animator.SetBool("Has Null", false);
+                break;
+            case ItemType.Lure:
+                animator.SetBool("Has Candle", false);
+                animator.SetBool("Has Key", false);
+                animator.SetBool("Has Lure", true);
+                animator.SetBool("Has Null", false);
+                break;
+            case ItemType.Null:
+                animator.SetBool("Has Candle", false);
+                animator.SetBool("Has Key", false);
+                animator.SetBool("Has Lure", false);
+                animator.SetBool("Has Null", true);
+                break;
+        }
     }
 }
