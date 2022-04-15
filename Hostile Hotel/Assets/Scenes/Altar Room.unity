@@ -432,9 +432,10 @@ GameObject:
   - component: {fileID: 479030181}
   - component: {fileID: 479030180}
   - component: {fileID: 479030179}
+  - component: {fileID: 479030182}
   m_Layer: 0
-  m_Name: Interaction Sqaure
-  m_TagString: Untagged
+  m_Name: Temp Key Interaction Storage
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -531,6 +532,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &479030182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479030178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac938a350d45f4b4d8bf0ae4cbf7a8dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storedItemType: 2
+  _keyItemType: 0
+  _placeableItemType: 0
+  _unlockedSprite: {fileID: 0}
+  _placedItemSprite: {fileID: 0}
+  _tookItemSprite: {fileID: 0}
+  _lockedText: 
+  _unlockedText: 
+  _getItemText: '*You found a key between two books*'
+  _inspectText: Hmm. Books.
+  _placedItemText: 
+  _badUseText: 
+  _badPlaceText: 
 --- !u!1001 &533181106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -879,11 +905,11 @@ GameObject:
   - component: {fileID: 1018104373}
   - component: {fileID: 1018104372}
   - component: {fileID: 1018104374}
-  - component: {fileID: 1018104375}
   - component: {fileID: 1018104376}
+  - component: {fileID: 1018104375}
   m_Layer: 0
   m_Name: Altar
-  m_TagString: Altar
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -989,11 +1015,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1018104371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a04053ffdae05f94eb89a6303d983af2, type: 3}
+  m_Script: {fileID: 11500000, guid: ac938a350d45f4b4d8bf0ae4cbf7a8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  altarSR: {fileID: 1018104372}
-  altarCompleteSprite: {fileID: 21300000, guid: 957b21f2c4af38040839e38b16f55e21, type: 3}
+  _storedItemType: 0
+  _keyItemType: 0
+  _placeableItemType: 1
+  _unlockedSprite: {fileID: 0}
+  _placedItemSprite: {fileID: 21300000, guid: 957b21f2c4af38040839e38b16f55e21, type: 3}
+  _tookItemSprite: {fileID: 0}
+  _lockedText: 
+  _unlockedText: 
+  _getItemText: 
+  _inspectText: Creepy.
+  _placedItemText: '*You placed the candle on the altar.*'
+  _badUseText: I don't think that's a good idea.
+  _badPlaceText: 
 --- !u!61 &1018104376
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1007,7 +1044,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.94716287, y: -1.718661}
+  m_Offset: {x: -0.94716287, y: -1.5474454}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1018,7 +1055,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9871199, y: 0.89712787}
+  m_Size: {x: 0.9871199, y: 0.5546968}
   m_EdgeRadius: 0
 --- !u!1001 &1041549615
 PrefabInstance:
@@ -1719,7 +1756,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1180a78c319b3c342a0c991a9c6acdd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableObjectsList: []
+  _interactableObjectsList:
+  - {fileID: 479030182}
+  - {fileID: 1018104375}
 --- !u!1001 &1173673174277809633
 PrefabInstance:
   m_ObjectHideFlags: 0

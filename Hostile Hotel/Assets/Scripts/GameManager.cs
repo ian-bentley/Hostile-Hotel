@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
         Room currentRoom = FindObjectOfType<Room>();
 
         // Save player data
-        playerData = new PlayerData(player.Inventory, player.HeldItemSoltNum);
+        playerData = new PlayerData(player.Inventory, player.HeldItemSlotNum);
 
         //Save room data of current room
         switch (currentRoomName)

@@ -1,0 +1,1104 @@
+fileFormatVersion: 2
+guid: ef586a737e0772b40a8c3343a6e11723
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6857609488843150591
+    second: Attack Pt 2_0
+  - first:
+      213: 2297286585318369672
+    second: Attack Pt 2_1
+  - first:
+      213: 1094988638872978971
+    second: Attack Pt 2_2
+  - first:
+      213: -8050925641458311804
+    second: Attack Pt 2_3
+  - first:
+      213: -287286063221573083
+    second: Attack Pt 2_4
+  - first:
+      213: -4085350060185117248
+    second: Attack Pt 2_5
+  - first:
+      213: 2751408448030992485
+    second: Attack Pt 2_6
+  - first:
+      213: -4822106874298408495
+    second: Attack Pt 2_7
+  - first:
+      213: -3615363491487848289
+    second: Attack Pt 2_8
+  - first:
+      213: -1926785500435716709
+    second: Attack Pt 2_9
+  - first:
+      213: 4967858119647004229
+    second: Attack Pt 2_10
+  - first:
+      213: -6481153530188410558
+    second: Attack Pt 2_11
+  - first:
+      213: -2720921974449415852
+    second: Attack Pt 2_12
+  - first:
+      213: 3513080288585746353
+    second: Attack Pt 2_13
+  - first:
+      213: -1958730550354815486
+    second: Attack Pt 2_14
+  - first:
+      213: 1495010921033271132
+    second: Attack Pt 2_15
+  - first:
+      213: -3444778774928371515
+    second: Attack Pt 2_16
+  - first:
+      213: 1655872484026018941
+    second: Attack Pt 2_17
+  - first:
+      213: -1262349572629017651
+    second: Attack Pt 2_18
+  - first:
+      213: 6181547919597245303
+    second: Attack Pt 2_19
+  - first:
+      213: -2689935790700659380
+    second: Attack Pt 2_20
+  - first:
+      213: 8509740435266036563
+    second: Attack Pt 2_21
+  - first:
+      213: 4382067286086542157
+    second: Attack Pt 2_22
+  - first:
+      213: 6973492454682839729
+    second: Attack Pt 2_23
+  - first:
+      213: -5179884036922617870
+    second: Attack Pt 2_24
+  - first:
+      213: -1175146258453181839
+    second: Attack Pt 2_25
+  - first:
+      213: -4539496641766765146
+    second: Attack Pt 2_26
+  - first:
+      213: -137602942502193375
+    second: Attack Pt 2_27
+  - first:
+      213: 1819871809737563484
+    second: Attack Pt 2_28
+  - first:
+      213: -4244045498389496911
+    second: Attack Pt 2_29
+  - first:
+      213: 8863007598157523469
+    second: Attack Pt 2_30
+  - first:
+      213: -1334290076699399644
+    second: Attack Pt 2_31
+  - first:
+      213: -1438770398421439579
+    second: Attack Pt 2_32
+  - first:
+      213: -4502822226426551695
+    second: Attack Pt 2_33
+  - first:
+      213: -5196474879906264765
+    second: Attack Pt 2_34
+  - first:
+      213: 2393025575252288413
+    second: Attack Pt 2_35
+  - first:
+      213: -6603515145816037211
+    second: Attack Pt 2_36
+  - first:
+      213: -4906294553489911910
+    second: Attack Pt 2_37
+  - first:
+      213: 3762288587368118104
+    second: Attack Pt 2_38
+  - first:
+      213: 7847880775727195091
+    second: Attack Pt 2_39
+  - first:
+      213: 4506053734336256657
+    second: Attack Pt 2_40
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack Pt 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10be729c080e4d0a0800000000000000
+      internalID: -6857609488843150591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 896
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889eb215af991ef10800000000000000
+      internalID: 2297286585318369672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_2
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 896
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16cc159d5e223f00800000000000000
+      internalID: 1094988638872978971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_3
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 896
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d1bc3e8cd554090800000000000000
+      internalID: -8050925641458311804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_4
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 896
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52af1ccf8da530cf0800000000000000
+      internalID: -287286063221573083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 784
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd9b8fe3cbed47c0800000000000000
+      internalID: -4085350060185117248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 784
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56865e8e767fe2620800000000000000
+      internalID: 2751408448030992485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 784
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d16970b85f641db0800000000000000
+      internalID: -4822106874298408495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_8
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 784
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9863fb3f06a3ddc0800000000000000
+      internalID: -3615363491487848289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_9
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 784
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95e720cbcea245e0800000000000000
+      internalID: -1926785500435716709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546891493a061f440800000000000000
+      internalID: 4967858119647004229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_11
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 672
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241d952f3315e06a0800000000000000
+      internalID: -6481153530188410558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_12
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 672
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459536b51e75d3ad0800000000000000
+      internalID: -2720921974449415852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_13
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 672
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7849cc8e7f0c030800000000000000
+      internalID: 3513080288585746353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_14
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 672
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206556731f031d4e0800000000000000
+      internalID: -1958730550354815486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57848303885fb410800000000000000
+      internalID: 1495010921033271132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_16
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 560
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0d69694ffa130d0800000000000000
+      internalID: -3444778774928371515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_17
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 560
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ce6b34047daf610800000000000000
+      internalID: 1655872484026018941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_18
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 560
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbc41d70cb3b7ee0800000000000000
+      internalID: -1262349572629017651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_19
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 560
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77316a5e41549c550800000000000000
+      internalID: 6181547919597245303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d7da676ad6baad0800000000000000
+      internalID: -2689935790700659380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_21
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 448
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3536fced6dba81670800000000000000
+      internalID: 8509740435266036563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_22
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 448
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d436c01cafa30dc30800000000000000
+      internalID: 4382067286086542157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_23
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 448
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bacc3db072d6c060800000000000000
+      internalID: 6973492454682839729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_24
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 448
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffc281a9ea5d18b0800000000000000
+      internalID: -5179884036922617870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ac4c144ba01bfe0800000000000000
+      internalID: -1175146258453181839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_26
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 336
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6adc9680bd77001c0800000000000000
+      internalID: -4539496641766765146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_27
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 336
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127bb145ad2271ef0800000000000000
+      internalID: -137602942502193375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_28
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 336
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d9724d4cb714910800000000000000
+      internalID: 1819871809737563484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_29
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 336
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbf5e9ea1f1a15c0800000000000000
+      internalID: -4244045498389496911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a64c9c37abffa70800000000000000
+      internalID: 8863007598157523469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_31
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 224
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ae00f9e36ab7de0800000000000000
+      internalID: -1334290076699399644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_32
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 224
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab2eb012f5780ce0800000000000000
+      internalID: -1438770398421439579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_33
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 224
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172ac13ca03c281c0800000000000000
+      internalID: -4502822226426551695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_34
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 224
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34942faf0a962e7b0800000000000000
+      internalID: -5196474879906264765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d936657f41cb53120800000000000000
+      internalID: 2393025575252288413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_36
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 112
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a829b836f99b54a0800000000000000
+      internalID: -6603515145816037211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_37
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 112
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fccc7291759ebb0800000000000000
+      internalID: -4906294553489911910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_38
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 112
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85735986985563430800000000000000
+      internalID: 3762288587368118104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_39
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 112
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d326d45cf549ec60800000000000000
+      internalID: 7847880775727195091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Pt 2_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a5fed4ff7b88e30800000000000000
+      internalID: 4506053734336256657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

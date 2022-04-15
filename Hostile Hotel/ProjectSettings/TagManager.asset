@@ -4,8 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Altar
-  - Candle
   - Exit
   - Interactable
   layers:
@@ -48,9 +46,9 @@ TagManager:
   - name: Map
     uniqueID: 1462554163
     locked: 0
+  - name: Floor Objects
+    uniqueID: 266011439
+    locked: 0
   - name: Furniture & Characters
     uniqueID: 2769058145
-    locked: 0
-  - name: Characters
-    uniqueID: 2866864221
     locked: 0

@@ -6,7 +6,10 @@ public class InteractableObject : MonoBehaviour
 {
     [SerializeField] ItemType _storedItemType;
     [SerializeField] ItemType _keyItemType;
+    [SerializeField] ItemType _placeableItemType;
     [SerializeField] Sprite _unlockedSprite;
+    [SerializeField] Sprite _placedItemSprite;
+    [SerializeField] Sprite _tookItemSprite;
     [SerializeField] string _lockedText;
     [SerializeField] string _unlockedText;
     [SerializeField] string _getItemText;
@@ -16,6 +19,7 @@ public class InteractableObject : MonoBehaviour
     [SerializeField] string _badPlaceText;
 
     bool _locked;
+    bool _receiveditem;
 
     void Awake()
     {
@@ -37,10 +41,22 @@ public class InteractableObject : MonoBehaviour
         set => _locked = value;
     }
 
+    public bool ReceivedItem
+    {
+        get => _receiveditem;
+        set => _receiveditem = value;
+    }
+
     public ItemType KeyItemType
     {
         get => _keyItemType;
         private set => _keyItemType = value;
+    }
+
+    public ItemType PlaceableItemType
+    {
+        get => _placeableItemType;
+        set => _placeableItemType = value;
     }
 
     public Sprite UnlockedSprite
@@ -49,6 +65,17 @@ public class InteractableObject : MonoBehaviour
         set => _unlockedSprite = value;
     }
 
+    public Sprite PlacedItemSprite
+    {
+        get => _placedItemSprite;
+        set => _placedItemSprite = value;
+    }
+
+    public Sprite TookItemSprite
+    {
+        get => _tookItemSprite;
+        set => _tookItemSprite = value;
+    }
 
     public string LockedText
     {
@@ -99,10 +126,24 @@ public class InteractableObject : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = UnlockedSprite;
     }
 
+    public ItemType GetItem()
+    {
+        ItemType item = StoredItemType;
+        StoredItemType = ItemType.Null;
+        GetComponent<SpriteRenderer>().sprite = TookItemSprite;
+        return item;
+    }
+
     public void Load(InteractableObjectData interactableObjectData)
     {
         StoredItemType = interactableObjectData.StoredItemType;
         Locked = interactableObjectData.Locked;
         GetComponent<SpriteRenderer>().sprite = interactableObjectData.Sprite;
+    }
+
+    public void PlaceItem()
+    {
+        GetComponent<SpriteRenderer>().sprite = PlacedItemSprite;
+        ReceivedItem = true;
     }
 }

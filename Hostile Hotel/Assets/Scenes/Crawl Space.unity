@@ -468,6 +468,7 @@ Transform:
   - {fileID: 196501074}
   - {fileID: 356424713}
   - {fileID: 45361735}
+  - {fileID: 731015203}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -610,6 +611,96 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4884729692525327302, guid: 03cce631c9197a8468fea14cbbe8982b, type: 3}
   m_PrefabInstance: {fileID: 709369647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &731015202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 670406559}
+    m_Modifications:
+    - target: {fileID: 1173673175507384393, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_Name
+      value: Exit to Bedroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384394, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: roomName
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.19333605
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3008
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.5198
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -16.6524
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7474257986635982628, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_Size.x
+      value: 2.0003476
+      objectReference: {fileID: 0}
+    - target: {fileID: 7474257986635982628, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0030308
+      objectReference: {fileID: 0}
+    - target: {fileID: 7474257986635982628, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.50262785
+      objectReference: {fileID: 0}
+    - target: {fileID: 7474257986635982628, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0015151501
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+--- !u!4 &731015203 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1173673175507384395, guid: 7231ef8caa9ace149bbec7ffd2da57f3, type: 3}
+  m_PrefabInstance: {fileID: 731015202}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &772088964
 PrefabInstance:

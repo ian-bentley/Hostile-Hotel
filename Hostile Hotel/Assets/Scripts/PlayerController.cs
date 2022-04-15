@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _speed;
 
     ItemType _heldItem;
-    int _heldItemSoltNum;
+    int _heldItemSlotNum;
     bool isInteracting;
 
     //Controls
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     public ItemType HeldItem
     {
-        get => Inventory[HeldItemSoltNum];
+        get => Inventory[HeldItemSlotNum];
     }
 
     public List<ItemType> Inventory
@@ -31,10 +31,10 @@ public class PlayerController : MonoBehaviour
         set => _inventory = value;
     }
 
-    public int HeldItemSoltNum
+    public int HeldItemSlotNum
     {
-        get => _heldItemSoltNum;
-        set => _heldItemSoltNum = value;
+        get => _heldItemSlotNum;
+        set => _heldItemSlotNum = value;
     }
 
     public float Speed
@@ -47,9 +47,7 @@ public class PlayerController : MonoBehaviour
     {
         Inventory = new List<ItemType>();
         Inventory.Add(ItemType.Null);
-        Inventory.Add(ItemType.Key); //temp
-        Inventory.Add(ItemType.Lure); //temp
-        HeldItemSoltNum = 0;
+        HeldItemSlotNum = 0;
     }
 
     void Update()
@@ -77,34 +75,34 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(inventoryScrollRightKey))
         {
-            if (HeldItemSoltNum == Inventory.Count - 1) //if held item position is last position in inventory list
+            if (HeldItemSlotNum == Inventory.Count - 1) //if held item position is last position in inventory list
             {
-                HeldItemSoltNum = 0; // held item position becomes first position
+                HeldItemSlotNum = 0; // held item position becomes first position
             }
             else
             {
-                HeldItemSoltNum++;
+                HeldItemSlotNum++;
             }
-            UpdateHand();
         }
 
         if (Input.GetKeyDown(inventoryScrollLeftKey))
         {
-            if (HeldItemSoltNum == 0) // if held item position is first position
+            if (HeldItemSlotNum == 0) // if held item position is first position
             {
-                HeldItemSoltNum = Inventory.Count - 1; // held item position becomes last position
+                HeldItemSlotNum = Inventory.Count - 1; // held item position becomes last position
             }
             else
             {
-                HeldItemSoltNum--;
+                HeldItemSlotNum--;
             }
-            UpdateHand();
         }
 
         if (Input.GetKeyDown(interactKey))
         {
             isInteracting = true;
         }
+
+        UpdateHand();
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -116,12 +114,20 @@ public class PlayerController : MonoBehaviour
                 if (HeldItem != ItemType.Null) // if holding an item
                 {
                     if (other.gameObject.GetComponent<InteractableObject>().KeyItemType != ItemType.Null 
-                        && other.gameObject.GetComponent<InteractableObject>().Locked && HeldItem == other.gameObject.GetComponent<InteractableObject>().KeyItemType) // if interactable object has a key and its locked and you are holding the key
+                        && other.gameObject.GetComponent<InteractableObject>().Locked 
+                        && HeldItem == other.gameObject.GetComponent<InteractableObject>().KeyItemType) // if interactable object has a key and its locked and you are holding the key
                     {
                         other.gameObject.GetComponent<InteractableObject>().Unlock(); //Unlock the object
                         Debug.Log(other.gameObject.GetComponent<InteractableObject>().UnlockedText);
                     }
-                    else // if item does not unlock the object
+                    else if (other.gameObject.GetComponent<InteractableObject>().PlaceableItemType != ItemType.Null 
+                        && HeldItem == other.gameObject.GetComponent<InteractableObject>().PlaceableItemType)
+                    {
+                        Inventory.Remove(Inventory[HeldItemSlotNum]);
+                        HeldItemSlotNum = 0;
+                        other.gameObject.GetComponent<InteractableObject>().PlaceItem();
+                    }
+                    else // if item does not unlock the object nor can be placed
                     {
                         //Player plays dialogue retrieved from object based on the item used
                         Debug.Log(other.gameObject.GetComponent<InteractableObject>().BadUseText);
@@ -140,8 +146,7 @@ public class PlayerController : MonoBehaviour
                         {
                             //Player plays dialogue retrieved from the interact grabbed item variable
                             Debug.Log(other.gameObject.GetComponent<InteractableObject>().GetItemText);
-                            Inventory.Add(other.gameObject.GetComponent<InteractableObject>().StoredItemType);
-                            other.gameObject.GetComponent<InteractableObject>().StoredItemType = ItemType.Null;
+                            Inventory.Add(other.gameObject.GetComponent<InteractableObject>().GetItem());
                         }
                         else
                         {
@@ -172,7 +177,7 @@ public class PlayerController : MonoBehaviour
             Inventory.Add(it);
         }
 
-        HeldItemSoltNum = playerData.HeldItemSlotNum;
+        HeldItemSlotNum = playerData.HeldItemSlotNum;
         UpdateHand();
     }
 
