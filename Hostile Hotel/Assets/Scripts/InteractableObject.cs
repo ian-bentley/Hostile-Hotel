@@ -7,6 +7,13 @@ public class InteractableObject : MonoBehaviour
     [SerializeField] ItemType _storedItemType;
     [SerializeField] ItemType _keyItemType;
     [SerializeField] Sprite _unlockedSprite;
+    [SerializeField] string _lockedText;
+    [SerializeField] string _unlockedText;
+    [SerializeField] string _getItemText;
+    [SerializeField] string _inspectText;
+    [SerializeField] string _placedItemText;
+    [SerializeField] string _badUseText;
+    [SerializeField] string _badPlaceText;
 
     bool _locked;
 
@@ -40,6 +47,50 @@ public class InteractableObject : MonoBehaviour
     {
         get => _unlockedSprite;
         set => _unlockedSprite = value;
+    }
+
+
+    public string LockedText
+    {
+        get => _lockedText;
+        set => _lockedText = value;
+    }
+
+    public string UnlockedText
+    {
+        get => _unlockedText;
+        set => _unlockedText = value;
+    }
+
+    public string GetItemText
+    {
+        get => _getItemText;
+        set => _getItemText = value;
+    }
+
+    public string InspectText
+    {
+        get => _inspectText;
+        set => _inspectText = value;
+    }
+
+    public string PlacedItemText
+    {
+        get => _placedItemText;
+        set => _placedItemText = value;
+    }
+
+
+    public string BadUseText
+    {
+        get => _badUseText;
+        set => _badUseText = value;
+    }
+
+    public string BadPlaceText
+    {
+        get => _badPlaceText;
+        set => _badPlaceText = value;
     }
 
     public void Unlock()

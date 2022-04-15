@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
     ItemType _heldItem;
     int _heldItemSoltNum;
+    bool isInteracting;
 
     //Controls
     KeyCode interactKey = KeyCode.F;
@@ -47,7 +48,6 @@ public class PlayerController : MonoBehaviour
         Inventory = new List<ItemType>();
         Inventory.Add(ItemType.Null);
         Inventory.Add(ItemType.Key); //temp
-        Inventory.Add(ItemType.Candle); //temp
         Inventory.Add(ItemType.Lure); //temp
         HeldItemSoltNum = 0;
     }
@@ -100,13 +100,18 @@ public class PlayerController : MonoBehaviour
             }
             UpdateHand();
         }
+
+        if (Input.GetKeyDown(interactKey))
+        {
+            isInteracting = true;
+        }
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.tag == "Interactable")
         {
-            if (Input.GetKeyDown(interactKey))
+            if (isInteracting)
             {
                 if (HeldItem != ItemType.Null) // if holding an item
                 {
@@ -114,12 +119,12 @@ public class PlayerController : MonoBehaviour
                         && other.gameObject.GetComponent<InteractableObject>().Locked && HeldItem == other.gameObject.GetComponent<InteractableObject>().KeyItemType) // if interactable object has a key and its locked and you are holding the key
                     {
                         other.gameObject.GetComponent<InteractableObject>().Unlock(); //Unlock the object
-                        Debug.Log("Unlocked object");
+                        Debug.Log(other.gameObject.GetComponent<InteractableObject>().UnlockedText);
                     }
                     else // if item does not unlock the object
                     {
                         //Player plays dialogue retrieved from object based on the item used
-                        Debug.Log("Used wrong item on object");
+                        Debug.Log(other.gameObject.GetComponent<InteractableObject>().BadUseText);
                     }
                 }
                 else //if not holding an item
@@ -127,33 +132,35 @@ public class PlayerController : MonoBehaviour
                     if (other.gameObject.GetComponent<InteractableObject>().Locked) //if object is locked
                     {
                         //Player plays dialogue retrieved from the interact locked variable
-                        Debug.Log("It's Locked");
+                        Debug.Log(other.gameObject.GetComponent<InteractableObject>().LockedText);
                     }
                     else //if item is unlocked
                     {
                         if (other.gameObject.GetComponent<InteractableObject>().StoredItemType != ItemType.Null) //if object is storing an item
                         {
-                            Debug.Log("Retrieved item: " + other.gameObject.GetComponent<InteractableObject>().StoredItemType);
                             //Player plays dialogue retrieved from the interact grabbed item variable
+                            Debug.Log(other.gameObject.GetComponent<InteractableObject>().GetItemText);
                             Inventory.Add(other.gameObject.GetComponent<InteractableObject>().StoredItemType);
                             other.gameObject.GetComponent<InteractableObject>().StoredItemType = ItemType.Null;
                         }
                         else
                         {
                             //Player plays dialogue retrieved from the interact unlocked variable
-                            Debug.Log("Hmm. An object.");
+                            Debug.Log(other.gameObject.GetComponent<InteractableObject>().InspectText);
                         }
                     }
                 }
             }
         }
-        if (other.gameObject.tag == "Exit")
+        else if (other.gameObject.tag == "Exit")
         {
-            if (Input.GetKeyDown(interactKey))
+            if (isInteracting)
             {
                 other.gameObject.GetComponent<Exit>().Use();
             }
         }
+
+        isInteracting = false;
     }
 
     public void Load(PlayerData playerData)

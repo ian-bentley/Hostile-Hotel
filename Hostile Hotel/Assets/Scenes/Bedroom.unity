@@ -395,6 +395,13 @@ MonoBehaviour:
   _storedItemType: 1
   _keyItemType: 2
   _unlockedSprite: {fileID: 21300000, guid: 8a999c0a6be83a9469c28f1331ae41f4, type: 3}
+  _lockedText: It's locked.
+  _unlockedText: '*You hear a click and the drawer opens.*'
+  _getItemText: '*You received a candle.*'
+  _inspectText: Nothing else seems to be in there.
+  _placedItemText: 
+  _badUseText: I don't think that will work.
+  _badPlaceText: 
 --- !u!61 &474006123
 BoxCollider2D:
   m_ObjectHideFlags: 0
